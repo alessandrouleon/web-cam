@@ -58,7 +58,7 @@ export default function PhotoModal() {
   const isDisabled = !image;
 
   return (
-    <Dialog open={open} onClose={handleClearCapture} fullWidth maxWidth="md">
+    <Dialog open={true} onClose={handleClearCapture} fullWidth maxWidth="md">
       <DialogTitle sx={{ textAlign: "center" }}>Câmera</DialogTitle>
       <Divider />
       <DialogContent>
@@ -112,4 +112,3 @@ function handleClose() {
 function changePhotoNewVisitant(imageSrc: string | null) {
   throw new Error("Function not implemented.");
 }
-
